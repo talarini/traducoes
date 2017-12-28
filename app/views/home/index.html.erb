@@ -1,0 +1,10 @@
+<h1 id="titulo"> Traduções Quero Ser Dev </h1>
+<hr>
+
+<% @traducoes.each do |trad| %>
+  <p><%= link_to trad.portuguese, translation_path(trad.id) %></p>
+<% end %>
+
+<%= link_to('Cadastrar Nova Tradução', new_translation_path) %>
+<br>
+<a href="http://campuscode.com.br">Feito Por Campus Code</a>
